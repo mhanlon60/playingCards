@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+</head>
+
+<body>
+
+<!-- Page Header -->
+<header>
+<img class="imageBannerLeft" src="../images/bannerCardsLeft.png">
+<img class="imageBannerRight" src="../images/bannerCardsRight.png">
+<h1>Playing Cards</h1>
+
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="multi.html">Multi-player</a></li>
+<li><a href="single.html">Single-player</a></li>
+<li><a href="register.html">Free Cards</a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main>
+<section>
+<h2>Register for a free pack of cards</h2>
+<p>In conjunction with The Ancient Card Players of Scotland we are distributing free packs of playing cards.</p>
+<p>If you wish to receive a free pack of playing cards please complete the information below and click on the submit button.</p>
+<p>Please note that * = a required field.</p>
+</section>
+
+<section>
+<form action="">
+  First name
+  <input type="text" name="firstname" size="30" maxlength="15">
+  <br><br>
+  Last name *
+  <input type="text" name="lastname" size="30" maxlength="15" required>
+  <br><br>
+  Street *
+  <input type="text" name="street" size="50" maxlength="50" required>
+  <br><br>
+  Town *
+  <input type="text" name="town" size="30" maxlength="20" required>
+  <br><br>
+  Postcode *
+  <input type="text" name="postcode" size="15" maxlength="10" required>
+  <br><br>
+  E-mail
+  <input type="text" name="email" size="70" maxlength="70">
+  <br><br>
+  Select the games you play
+  <select name="cardGame" multiple>
+    <option value="red">Bridge</option>
+    <option value="blue">Poker</option>
+    <option value="green">Whist</option>
+    <option value="yellow">Solitaire</option>
+  </select>
+  <br><br>
+  Choose your age
+  <input type="radio" name="age" value="under 18" > under 18
+  <input type="radio" name="age" value="18 to 65" checked> 18 to 65
+  <input type="radio" name="age" value="over 65"> over 65
+  <br><br>
+  Number of years you have been playing cards games
+  <input type="number" name="years" min="0" max="100">
+  <br><br>
+  <input type="submit" onclick="alert('Form Entered')" value="Click here to send details">
+</form> 
+</section>
+</main>
+
+<!-- Page Footer -->
+<footer>
+<p> &copy; Card Foundation <br> 2017 <br> Please provide feedback to: jlongridge@jlinternet.co.uk </p>
+</footer>
+
+</body>
+</html>
